@@ -6,11 +6,14 @@
 </head>
 <body>
     <header>
-        
+
         <nav>
             <div id="brandname">
-                <img src="path-to-your-logo.png" alt="Logo" id="logo">
-                <a href="#">DJ</a></div>
+                <a href="#">
+                    <img src="images/brand-memoji.png" alt="Logo" id="logo">
+                    DJ
+                </a>
+                </div>
             <ul>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#articles">Articles</a></li>
@@ -21,7 +24,7 @@
     <main>
         <section id="intro">
             <div class="profile">
-                <img src="your-image.jpg" alt="Your Name">
+                <img src="images/your-image.jpg" alt="Your Name">
             </div>
             <h1>I'm Deepankar. <br> Analyst and AI enthusiast.</h1>
             <p>I also [something you do], oh and I love [something you love].</p>
@@ -32,22 +35,22 @@
             <div class="grid">
                 <!-- Repeat the following div for each project -->
                 <div class="project">
-                    <img src="your-image.jpg" alt="Project 1">
+                    <img src="images/your-image.jpg" alt="Project 1">
                     <h3>Project Title</h3>
                     <p>Extra Info</p>
                 </div>
                 <div class="project">
-                    <img src="your-image.jpg" alt="Project 2">
+                    <img src="images/your-image.jpg" alt="Project 2">
                     <h3>Project Title</h3>
                     <p>Extra Info</p>
                 </div>
                 <div class="project">
-                    <img src="your-image.jpg" alt="Project 3">
+                    <img src="images/your-image.jpg" alt="Project 3">
                     <h3>Project Title</h3>
                     <p>Extra Info</p>
                 </div>
                 <div class="project">
-                    <img src="your-image.jpg" alt="Project 4">
+                    <img src="images/your-image.jpg" alt="Project 4">
                     <h3>Project Title</h3>
                     <p>Extra Info</p>
                 </div>
@@ -65,9 +68,61 @@
                 </div>
             </div>
         </section>
+       
+
+
+        <section id="contact">
+            <h2>Say Hello</h2>
+            <p>I'm always open for a chat! Feel free to reach out to me on any of the platforms below.</p>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/deepankar-jain" target="_blank">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="#" id="show-form">
+                    <img src="images/gmail-icon.png" alt="Gmail">
+                </a>
+                <a href="https://github.com/deepankar-jain" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub">
+                </a>
+                <a href="https://twitter.com/deepankar_j" target="_blank">
+                    <img src="images/twitter-icon.png" alt="Twitter">
+                </a>
+            </div>
+        </section>
+        <section id="contact-form" style="display: none;">
+            <div class="form-container">
+                <form action="https://formspree.io/youremail@gmail.com" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="_replyto" placeholder="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>      
+        
+        
     </main>
     <footer>
         <p>©2023 [Your Name]. All rights reserved.</p>
     </footer>
+
+
+    <script>
+        document.getElementById('show-form').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevents the page from reloading
+    document.getElementById('contact-form').style.display = 'block'; // Shows the contact form
+});
+
+    </script>
+
+    
 </body>
 </html>
